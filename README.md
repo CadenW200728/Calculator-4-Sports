@@ -7,3 +7,8 @@ TOTAL POINTS (NHL):
 To calculate a team's total amount of points, input the amount of wins, losses, and overtime losses they have/could have into the parentheses of their corresponding variables at the top of the program.
 
 Once you have done that, run the program. It will display the team's record and calculated amount of points based on the record in the console log.
+
+PITCHING CALCULATOR:
+
+To calculate a pitcher's stats, input the amount of earned runs, total innings, played innings, walks, and hits they have/could have into the parentheses of their corresponding variables at the top of the program.
+
