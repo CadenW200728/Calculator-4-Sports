@@ -1,0 +1,25 @@
+//Input the amount of earned runs, innings, innings pitched, walks, and hits from a hypothetical or current pitcher into the variables.
+var earnedRuns = 5;
+var totalInnings = 9;
+var inningsPitched = 6;
+var walks = 3;
+var hits = 4;
+console.log("Earned Runs: " + earnedRuns);
+console.log("Total Innings: " + totalInnings);
+console.log("Innings Pitched: " + inningsPitched);
+console.log("Walks: " + walks);
+console.log("Hits: " + hits);
+calculateERA();
+calculateWHIP();
+//Function "calculateERA" will calculate the earned run average from the inputted stats (rounded to the hundreds).
+function calculateERA() {
+var earnedRunAverage = 0;
+earnedRunAverage = (earnedRuns * totalInnings) / inningsPitched;
+console.log("Earned Run Average: " + Math.round(earnedRunAverage * 100) / 100);
+}
+//Function "calculateWHIP" will calculate the WHIP from the inputted stats (rounded to the hundreds).
+function calculateWHIP() {
+var WHIP = 0;
+WHIP = (walks + hits) / inningsPitched;
+console.log("WHIP: " + Math.round(WHIP * 100) / 100);
+}
