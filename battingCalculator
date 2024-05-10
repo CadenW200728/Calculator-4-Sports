@@ -1,0 +1,40 @@
+//Input the amount of earned hits, at-bats, bases on balls, hit by pitches, plate appearances, doubles, triples, runs batted in, and homeruns from a hypothetical or current batter into the variables.
+var hits = 0;
+var atBats = 0;
+var basesOnBalls = 0;
+var hitByPitches = 0;
+var plateAppearances = 0;
+var doubles = 0;
+var triples = 0;
+var homeruns = 0;
+var RBIs = 0;
+console.log("Hits: " + hits);
+console.log("At-Bats: " + atBats);
+console.log("Walks: " + basesOnBalls);
+console.log("Hit By Pitches: " + hitByPitches);
+console.log("plateAppearances: " + hits);
+console.log("Homeruns: " + homeruns);
+console.log("Runs Batted In: " + RBIs);
+calculateBA();
+calculateOBP();
+calculateSlugging();
+//Function "calculateBA" will calculate the batting average from the inputted stats (rounded to the hundreds).
+function calculateBA() {
+var battingAverage = 0;
+battingAverage = hits / atBats;
+console.log("Batting Average: " + Math.round(battingAverage * 100) / 100);
+}
+//Function "calculateOBP" will calculate the on-base percentage from the inputted stats.
+function calculateOBP() {
+var onBasePercentage = 0;
+onBasePercentage = (basesOnBalls + hits) + hitByPitches / plateAppearances;
+console.log("On-Base Percentage: " + Math.round(onBasePercentage * 100 + "%"));
+}
+//Function "calculateSlugging" will calculate the slugging percentage from the inputted stats.
+function calculateSlugging() {
+var sluggingPercentage = 0;
+triples = triples * 2;
+var homeruns = homeruns * 3;
+sluggingPercentage = hits + doubles + triples + homeruns / atBats;
+console.log("Slugging Percentage: " + Math.round(sluggingPercentage * 100 + "%"));
+}
