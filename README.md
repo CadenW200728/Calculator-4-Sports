@@ -12,3 +12,6 @@ PITCHING CALCULATOR:
 
 To calculate a pitcher's stats, input the amount of earned runs, total innings, played innings, walks, and hits they have/could have into the parentheses of their corresponding variables at the top of the program.
 
+BATTING CALCULATOR: 
+
+To calculate a pitcher's stats, input the amount of hits, at-bats, bases on balls, hit by pitches, plate appearances, doubles, triples, homeruns, and (optionally) runs batted in they have/could have into the parentheses of their corresponding variables at the top of the program. (NOTE: the batting calculator in particular is a bit experimental, so if you notice any errors feel free to provide feedback, thanks!)
